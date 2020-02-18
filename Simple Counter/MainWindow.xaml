@@ -1,0 +1,67 @@
+﻿<Window x:Class="Simple_Counter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Simple_Counter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="110"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Width="80" Margin="10,10,0,0" Text="Text"/>
+                <TextBox Grid.Column="1" Grid.Row="0" Width="100" Margin="10,10,0,0" x:Name="btnLabel1"/>
+
+                <TextBlock Grid.Row="1" Width="80" Margin="10,10,0,0" Text="Count text"/>
+                <TextBox Grid.Column="1" Grid.Row="1" Width="100" Margin="10,10,0,0" x:Name="btnLabel2"/>
+
+                <TextBlock Grid.Row="2" Width="80" Margin="10,10,0,0" Text="X"/>
+                <TextBox Grid.Column="1" Grid.Row="2" Width="100" Margin="10,10,0,0" x:Name="btnX"/>
+
+                <TextBlock Grid.Row="3" Width="80" Margin="10,10,0,0" Text="Y"/>
+                <TextBox Grid.Column="1" Grid.Row="3" Width="100" Margin="10,10,0,0" x:Name="btnY"/>
+
+                <TextBlock Grid.Row="4" Width="80" Margin="10,10,0,0" Text="Width"/>
+                <TextBox Grid.Column="1" Grid.Row="4" Width="100" Margin="10,10,0,0" x:Name="btnWidth"/>
+
+                <TextBlock Grid.Row="5" Width="80" Margin="10,10,0,0" Text="Height"/>
+                <TextBox Grid.Column="1" Grid.Row="5" Width="100" Margin="10,10,0,0" x:Name="btnHeight"/>
+
+                <TextBlock Grid.Row="6" Width="80" Margin="10,10,0,0" Text="Bg Color"/>
+                <TextBox Grid.Column="1" Grid.Row="6" Width="100" Margin="10,10,0,0" x:Name="btnColor"/>
+
+                <TextBlock Grid.Row="7" Width="80" Margin="10,10,0,0" Text="Text Color"/>
+                <TextBox Grid.Column="1" Grid.Row="7" Width="100" Margin="10,10,0,0" x:Name="btnTxtColor"/>
+
+            <CheckBox Grid.Row="8" Content="Delete" Margin="10,10,0,0" Click="ToggleDeletion"/>
+            <Button Grid.Column="1" Grid.Row="8" Content="Add"  Margin="10,10,0,0" Click="AddNewButton"/>
+
+            <Button Grid.Column="1" Grid.Row="9" Content="Save"  Margin="10,10,0,0" Click="SaveData"/>
+
+        </Grid>
+
+        <Canvas Grid.Column="1" x:Name="canvas"></Canvas>
+    </Grid>
+    
+</Window>
